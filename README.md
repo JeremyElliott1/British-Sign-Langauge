@@ -2,15 +2,12 @@
 
 > Learn about british sign language and test your knowledge with a quiz
 
-**Badges will go here**
 
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+npm install
+```
