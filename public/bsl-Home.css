@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Below is used reset CSS from https://meyerweb.com/eric/tools/css/reset/
+   CSS reset is used to first provide a consistant and easy to manage starting point for styling a webpage*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Global Styles/Layout */
+
+body {
+	background-color: #C7C1C1;
+	margin: auto; /* horizontally centres the body */
+	min-width: 510px; /* ensures the width of the body is never smaller than 510px */
+	max-width: 960px; /* ensures the width of the body is never larger than 960px */
+}
+
+#background{
+	background-color: #FFFFFF
+;
+}
+
+.section{
+	margin: 10px; /* shorthand to create space between the section elements */
+
+}
+
+h1, h2, h3{
+	margin-bottom: 20px; /* creates space below all headers (h1,2,3) */
+}
+
+hr{
+	margin-top: 25px; /* Adds additional spacing between each section to match png file*/
+	border: 4px solid #004B83; /* shorthand to create a border of 4px width, with solid style with using a colour defined by hexadecimal */
+	clear: both; /* specifies that elements both left and right of the horizontal rule are not allowed to float
+					ensuring the horizontal rule spans the width of the page clearly showing different segments*/
+}
+
+/* Typography */
+
+h1, h2, h3 {
+	font-family: "Lucida Sans Unicode", serif; /* font family created with serif text as a fallback in case "lucia Sans Unicode" is not supported in a browser */
+	color: #004B83;
+	font-weight: bold; /* puts text in bold */
+}
+
+h1{
+	display: inline-block; /* inline-block to allows h1 width to be set and not take up the entire width of the page, allowing header floated to the right */
+	font-size: 36px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+h3{
+	font-size: 14px;
+}
+
+span.HeaderEmphasis{
+	color: red;
+}
+
+p{
+	font-family: "Palatino Linotype", serif;
+}
+
+ em{
+	font-style: italic; /* all text with the emphasis tag is styled in italic */
+}
+
+ b{
+	font-weight: bold;
+}
+
+.navOptionsObject a{
+	color:#FFFFFF;
+ 	text-decoration: none; /* removes the underline and blue font colour associated with hyper links */
+}
+
+#linguistics #legendHeader{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* Layout (Sections) */
+
+.navBar{
+	position: absolute;
+	top: 0px; /* Combined with position allows the navbar to ignore the normal flow of the webpage and sets
+			 navBar to no space between itself and the of the parent container (body)*/
+	height: 40px;
+	text-align: right; /* Aligns the text to the right of the webpage */
+	background-color: #004B83; /* adds background colour using specified hexadecimal */
+	max-width: 960px; /* ensures navBar width can only be less than 960px in line with the webpage body */
+	width: 100%; /*ensures that the navBar is as wide as the current page width allowing automatic resizing between 510px & 960px*/
+}
+
+#header {
+	margin-top: 40px; /* adds an appropriate amount of space between the top of the top of the body to position the header below the navBar */
+}
+
+#header #headerImageWrapper {
+	float: right; /*floats the wrapper to the right side of the page allowing the image to be displayed on the right */
+	margin: 10px; /*provides space top, bottom, left, right of 10px around the image */
+	background-image: url(http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8004/css/sign_language.png);
+	height: 82px;
+	width: 96px;
+}
+
+/* Components */
+
+.navOptionsObject{
+	display: inline-block; /*ensures there is no line-break after each navObject, therefore each navObject can be on the same line on the navBar.
+							Also allows setting of the height to match the navBar helping to vertically align the text in the middle of the navBar
+							while respecting the margins to the left and right of the object. */
+	text-align: right;
+	vertical-align: middle;
+	line-height: 40px; /* sets a line height of a div elements (navObjects) to be in the middle of the navBar */
+	margin-right: 20px;
+}
+
+.navOptionsObject:hover {
+  background-color: #0683B2; /* changes the colour of the navBarObjects when the cursor hovers over each object */
+}
+
+.navDropDownObject{
+	display: none; /* removes element as not specified in specification*/
+}
+
+#history #HistoryImage{
+ 	float: right;
+    margin-right: 10px;  
+    padding: 20px 20px 22px 20px;
+    background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8004/css/420x370-box.png") no-repeat;
+}
+
+#linguistics #imageKeyWrapper{ 
+	float: left; 
+	margin-left: 10px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: double 3px #004B83; /*uses double style of a border */
+}
+
+#linguistics #imageSection img{
+	width:500px; /* sets width of image to match width in png */
+}
+
+#linguistics #imageSection p{
+	text-align: center;
+	font-size: 8px;
+}
+
+#linguistics #imageKeyDivider {
+		border: 2px solid #004B83;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 90%; /*provides that the line break width is sligthly smaller than the imageKeyWrapper width */
+}
+
+#linguistics #legendHeader{
+	margin-left: 15px;
+}
+
+#linguistics #keySection{
+	display: block;
+	padding: 10px;
+}
+
+.keyObject{
+	display: block; /* displays the key as a block element within its parent container (KeySection) 
+						so it each new object (img/p pair) starts on a new line. */
+}
+
+.keyObject p{
+	display: inline; /*pargarphs formatted as an inline element enusuring each paragraph does not start a new line */
+	margin-left: 10px;
+	font-size: 10px;
+}
+#linguistics #linguisticsText {
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+
+#linguistics #linguisticsText #signLanguageTypesList  {
+	margin-left: 575px; /* Adds a indent left for the unordered list and it's list objects to match example png */
+}
+
+#bsl #videoWrapper {
+	float: right;
+	background: url(http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8004/css/460x320-box.png);
+	margin-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 31px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 20px;
+	text-align: center;
+	font-size: 8px;
+}
+
+#bsl #signatureLevelList{
+	margin-left: 6%;
+}
+
+
+#lettersContainer{
+	padding:5px;
+}
+
+
+.letterObject{
+	display: inline-block;
+	width: 101px;
+	border: 1px solid #666666;
+	text-align: center; /* text aligned to the center of the container/object*/
+	margin: 5px;
+}
+
+.letterObject p{
+	font-size: 11px;
+	margin: 0px;
+	color: #FFFFFF;
+	background-color: #004B83;
+}
+
+#numbersContainer{
+	padding: 5px;
+}
+
+.numberObject{
+	display: inline-block;
+	width: 101px;
+	border: 1px solid #666666;
+	text-align: center;
+	margin: 5px;
+}
+
+.numberObject p{
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #004B83;
+	width: 100%;
+}
+.numberObject p small{
+	font-size: 8px;
+}
+
+#footer{
+	height: 40px;
+}
+
+#footerLink{
+	float: right;
+}

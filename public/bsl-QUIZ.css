@@ -1,0 +1,11 @@
+
+h1, h2, h3 {
+	font-family: "Lucida Sans Unicode", serif; /* font family created with serif text as a fallback in case "lucia Sans Unicode" is not supported in a browser */
+	color: #004B83;
+	font-weight: bold; /* puts text in bold */
+}
+
+p{
+	font-family: "Palatino Linotype", serif;
+}
+
