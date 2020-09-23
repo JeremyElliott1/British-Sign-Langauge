@@ -6,7 +6,7 @@
 
 ## Installation
 
-Showcases using HTML / CSS / JavaScript to implement a aesthetically pleaseing web app with form authentication
+Showcases using HTML / CSS / JavaScript to implement a aesthetically pleasing web app with form validation
 
 
 ## Installation
