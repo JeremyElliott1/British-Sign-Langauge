@@ -1,4 +1,4 @@
-# British Sign Langauge Website
+# British Sign Langauge Web App
 
 > Learn about british sign language and test your knowledge with a quiz
 
@@ -6,7 +6,7 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [npm](https://docs.npmjs.com/cli/install#:~:text=npm%20install%20(in%20package%20directory,directory)%20as%20a%20global%20package.) to install British-Sign-Langauge Web App.
 
 ```bash
 npm install
