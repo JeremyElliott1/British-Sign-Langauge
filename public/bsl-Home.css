@@ -274,3 +274,15 @@ p{
 #footerLink{
 	float: right;
 }
+
+
+#buttonContainer{
+	display: grid;
+	place-items: center;
+	margin: auto;
+	width: 50%;
+}
+
+#buttonContainer__button{
+	text-decoration: none;
+}
